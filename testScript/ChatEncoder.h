@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CryptLib.h"
-#define ENCRYPT_LENGTH 5
+#define SHA256_ENCRYPT_LENGTH 32
+#define RandomIV_LENGTH 16
 @interface ChatEncoder : NSObject {
   NSString* secretKey;
   StringEncryption* stringEncrypt;
@@ -17,8 +18,8 @@
 - (instancetype)initWithSecret:(NSString*)secretKey;
 - (void)EncryptMessage:(NSString*)message
           onCompletion:
-              (void (^)(NSString* encryptedMessage, NSString* IV))completion;
-- (void)DecryptMessage:(NSString*)encryptedMessage
+              (void (^)(NSData *encryptedData, NSString* IV))completion;
+- (void)DecryptMessage:(NSData*)encryptedData
                  andIV:(NSString*)IV
           onCompletion:(void (^)(NSString* message))completion;
 

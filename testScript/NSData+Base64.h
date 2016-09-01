@@ -41,5 +41,8 @@ char *NewBase64Encode(
 
 // added by Hiroshi Hashiguchi
 - (NSString *)base64EncodedStringWithSeparateLines:(BOOL)separateLines;
+#pragma mark - String Conversion
+- (NSString *)hexadecimalString;
++ (NSData *)dataFromHexString:(NSString *)string;
 
 @end
