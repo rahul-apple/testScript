@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE9C89121D77EFBD00F236B0 /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9C890F1D77EFBD00F236B0 /* CryptLib.m */; };
+		BE9C89131D77EFBD00F236B0 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9C89111D77EFBD00F236B0 /* NSData+Base64.m */; };
+		BE9C89171D77F4C800F236B0 /* ChatEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9C89161D77F4C800F236B0 /* ChatEncoder.m */; };
 		BECD41071D76F603004794FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD41061D76F603004794FB /* main.m */; };
 		BECD410A1D76F603004794FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD41091D76F603004794FB /* AppDelegate.m */; };
 		BECD410D1D76F603004794FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD410C1D76F603004794FB /* ViewController.m */; };
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE9C890E1D77EFBD00F236B0 /* CryptLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptLib.h; sourceTree = "<group>"; };
+		BE9C890F1D77EFBD00F236B0 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptLib.m; sourceTree = "<group>"; };
+		BE9C89101D77EFBD00F236B0 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		BE9C89111D77EFBD00F236B0 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		BE9C89141D77F05300F236B0 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
+		BE9C89151D77F4C800F236B0 /* ChatEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatEncoder.h; sourceTree = "<group>"; };
+		BE9C89161D77F4C800F236B0 /* ChatEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatEncoder.m; sourceTree = "<group>"; };
 		BECD41021D76F603004794FB /* testScript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testScript.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECD41061D76F603004794FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BECD41081D76F603004794FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +111,10 @@
 		BECD41041D76F603004794FB /* testScript */ = {
 			isa = PBXGroup;
 			children = (
+				BE9C890E1D77EFBD00F236B0 /* CryptLib.h */,
+				BE9C890F1D77EFBD00F236B0 /* CryptLib.m */,
+				BE9C89101D77EFBD00F236B0 /* NSData+Base64.h */,
+				BE9C89111D77EFBD00F236B0 /* NSData+Base64.m */,
 				BECD41081D76F603004794FB /* AppDelegate.h */,
 				BECD41091D76F603004794FB /* AppDelegate.m */,
 				BECD410B1D76F603004794FB /* ViewController.h */,
@@ -110,6 +124,9 @@
 				BECD41131D76F603004794FB /* LaunchScreen.storyboard */,
 				BECD41161D76F603004794FB /* Info.plist */,
 				BECD41051D76F603004794FB /* Supporting Files */,
+				BE9C89141D77F05300F236B0 /* PrefixHeader.h */,
+				BE9C89151D77F4C800F236B0 /* ChatEncoder.h */,
+				BE9C89161D77F4C800F236B0 /* ChatEncoder.m */,
 			);
 			path = testScript;
 			sourceTree = "<group>";
@@ -272,6 +289,9 @@
 			files = (
 				BECD410D1D76F603004794FB /* ViewController.m in Sources */,
 				BECD410A1D76F603004794FB /* AppDelegate.m in Sources */,
+				BE9C89131D77EFBD00F236B0 /* NSData+Base64.m in Sources */,
+				BE9C89121D77EFBD00F236B0 /* CryptLib.m in Sources */,
+				BE9C89171D77F4C800F236B0 /* ChatEncoder.m in Sources */,
 				BECD41071D76F603004794FB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +516,7 @@
 				BECD41311D76F604004794FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECD41321D76F604004794FB /* Build configuration list for PBXNativeTarget "testScriptTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				BECD41341D76F604004794FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECD41351D76F604004794FB /* Build configuration list for PBXNativeTarget "testScriptUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				BECD41371D76F604004794FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
